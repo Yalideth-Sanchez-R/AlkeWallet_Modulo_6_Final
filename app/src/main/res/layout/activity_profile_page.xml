@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Profile_Page">
+
+    <View
+        android:id="@+id/viewFondoGrisProfile"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="#D1D5D8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMiPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/jua"
+        android:text="Mi perfil"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLapizEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewFondoGrisProfile"
+        app:srcCompat="@drawable/icon_edit" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/contenedorFotoBlancoProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMiPerfil">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivFotoAmanda"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            app:shapeAppearanceOverlay="@style/CircleImage" />
+            <!--android:src="@drawable/ic_foto_perfil" -->
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtNombreAmanda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/jua"
+        android:text="Amanda Alkemy"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenedorFotoBlancoProfile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="volverAlHome"
+        app:layout_constraintTop_toBottomOf="@id/viewFondoGrisProfile"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_opcion_perfil"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/img_ic_logo_customer"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_customer"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:id="@+id/img_ic_flecha_profile"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:srcCompat="@drawable/ic_flecha_profile"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/txt_MiInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi información"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/jua"
+                android:layout_toEndOf="@id/img_ic_logo_customer"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_opcion_perfil"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/img_ic_logo_tarjetas"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_tarjeta"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:id="@+id/img_ic_flecha_profile2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:srcCompat="@drawable/ic_flecha_profile"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/txt_MisTarjetas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mis tarjetas"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/jua"
+                android:layout_toEndOf="@id/img_ic_logo_tarjetas"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_opcion_perfil"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/img_ic_logo_opciones"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_config"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:id="@+id/img_ic_flecha_profile3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:srcCompat="@drawable/ic_flecha_profile"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/txt_opciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opciones"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/jua"
+                android:layout_toEndOf="@id/img_ic_logo_opciones"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_opcion_perfil"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/img_ic_logo_ayuda"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_ayuda"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:id="@+id/img_ic_flecha_profile4"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:srcCompat="@drawable/ic_flecha_profile"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/txt_ayuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centro de ayuda"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/jua"
+                android:layout_toEndOf="@id/img_ic_logo_ayuda"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

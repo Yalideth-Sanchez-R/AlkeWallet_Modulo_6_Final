@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AlkeWallet"
+        android:usesCleartextTraffic="true">
+
+        <!-- PANTALLA 1: SPLASH SCREEN (Arranca la app) -->
+        <activity
+            android:name=".Activity_Splash_Screen"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- PANTALLA 2: BIENVENIDA (Elige login o registro) -->
+        <activity
+            android:name=".Activity_Login_SingUp_Page"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- PANTALLA 3: LOGIN (Inicia sesión o crea cuenta) -->
+        <activity
+            android:name=".Activity_Login_Page"
+            android:exported="false"
+            android:theme="@style/Theme.AlkeWallet"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- PANTALLA 4: SIGNUP (Crea cuenta nueva) -->
+        <activity
+            android:name=".Activity_Singup_Page"
+            android:exported="false"
+            android:theme="@style/Theme.AlkeWallet"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- PANTALLA 5: HOME PAGE (Usuario registrado con saldo) -->
+        <activity
+            android:name=".Activity_Home_Page"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- PANTALLA 6: HOME PAGE EMPTY CASE (Usuario nuevo sin transacciones) -->
+        <activity
+            android:name=".Activity_HomePage_Empty_Case"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- PANTALLA 7: PERFIL DE USUARIO -->
+        <activity
+            android:name=".Activity_Profile_Page"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- PANTALLA 8: ENVIAR DINERO -->
+        <activity
+            android:name=".Activity_Send_Money"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- PANTALLA 9: INGRESAR DINERO -->
+        <activity
+            android:name=".Activity_Request_Money"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
