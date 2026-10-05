@@ -25,12 +25,12 @@ Se diseñó una suite de pruebas robusta en la carpeta de test locales utilizand
 *   Validación matemática exacta de la disminución del saldo tras un envío de fondos (`120000.0 OK`).
 *   Simulación y aserción de campos clave (como el mapeo obligatorio de `emailUsuario`) al procesar actualizaciones de ID mediante interceptores locales.
 
-# 6. Capturas de pantalla de la app
-<img width="495" height="420" alt="img_alkewallet" src="https://github.com/user-attachments/assets/ac100c28-8ed1-4548-9334-2c71aee2c12f" width="230" />
-<img width="311" height="620" alt="2ak" src="https://github.com/user-attachments/assets/d2b53363-649a-47b2-8e82-2ca413053b34" width="230" />
-<img width="318" height="626" alt="3ak" src="https://github.com/user-attachments/assets/95ec1d72-118b-49cc-b065-1a270408ef8d" width="230"/>
-<img width="359" height="641" alt="4ak" src="https://github.com/user-attachments/assets/3ceb60bb-20ce-4620-81dc-b734a0e855cd" width="230"/>
-<img width="309" height="629" alt="5ak" src="https://github.com/user-attachments/assets/bc1ff233-0997-4cfd-91c6-e5ef7d5d23ac" width="230"/>
-<img width="302" height="623" alt="6ak" src="https://github.com/user-attachments/assets/02ee96be-3401-4d73-8853-ae180b243090" width="230"/>
-<img width="294" height="626" alt="7ak" src="https://github.com/user-attachments/assets/84a68d2b-2f2d-444f-bb6e-a33ee9a36b8f" width="230"/>
-<img width="304" height="630" alt="8ak" src="https://github.com/user-attachments/assets/9f7a8601-395d-4820-8169-06afd0985896" width="230"/>
+# 6. Capturas de pantalla 
+<img width="495" height="420" alt="img_alkewallet" src="https://github.com/user-attachments/assets/ac100c28-8ed1-4548-9334-2c71aee2c12f" width="100" />
+<img width="311" height="620" alt="2ak" src="https://github.com/user-attachments/assets/d2b53363-649a-47b2-8e82-2ca413053b34" width="100" />
+<img width="318" height="626" alt="3ak" src="https://github.com/user-attachments/assets/95ec1d72-118b-49cc-b065-1a270408ef8d" width="100"/>
+<img width="359" height="641" alt="4ak" src="https://github.com/user-attachments/assets/3ceb60bb-20ce-4620-81dc-b734a0e855cd" width="100"/>
+<img width="309" height="629" alt="5ak" src="https://github.com/user-attachments/assets/bc1ff233-0997-4cfd-91c6-e5ef7d5d23ac" width="100"/>
+<img width="302" height="623" alt="6ak" src="https://github.com/user-attachments/assets/02ee96be-3401-4d73-8853-ae180b243090" width="100"/>
+<img width="294" height="626" alt="7ak" src="https://github.com/user-attachments/assets/84a68d2b-2f2d-444f-bb6e-a33ee9a36b8f" width="100"/>
+<img width="304" height="630" alt="8ak" src="https://github.com/user-attachments/assets/9f7a8601-395d-4820-8169-06afd0985896" width="100"/>
